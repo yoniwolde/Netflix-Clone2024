@@ -1,14 +1,16 @@
 import React from 'react'
-import Header from '../../Components/Header/Header'
-import Footer from '../../Components/Footer/Footer'
-import Banner from '../../Components/Banner/Banner';
+import Header from "../../Components/Header/Header";
+import Footer from "../../Components/Footer/Footer";
+import Banner from "../../Components/Banner/Banner";
+// import Row from "../../Components/Rows/Row/Row"
 
 
-function Home() {
+const Home = () => {
   return (
     <>
       <Header />
-      <Banner/>
+      <Banner />
+      {/* <Row/> */}
       <Footer/>
     </>
   );

@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState} from "react";
 import "./row.css";
 import axios from "../../Utils/axios";
-import movieTrailer from 'movie-trailer';
-import youTube from 'react-youtube';
+import movieTrailer from "movie-trailer";
+import YouTube from "react-youtube";
 
 const Row = ({ title, fetchUrl, isLargeRow }) => {
-  const [movies, setMovies] = useState([]);
-  const [trailerUrl, setTrailerUrl] = useStates("");
+  const [movies, setMovie] = useState([]);
+  const [trailerUrl, setTrailerUrl] = useState("");
 
-  let base_url = "https://image.tmdb.org/t/p/original";
+  const base_url = "https://image.tmdb.org/t/p/original";
 
   useEffect(() => {
     (async () => {
@@ -16,7 +16,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
         console.log(fetchUrl);
         const request = await axios.get(fetchUrl);
         console.log(request);
-        setMovies(request.data.requests);
+        setMovie(request.data.results);
       } catch (error) {
         console.log("error", error);
       }
@@ -64,10 +64,11 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
         ))}
       </div>
       <div style={{ padding: "40px" }}>
-        {trailerUrl && <youTube videoId={trailerUrl} opts={opts} />}
+        {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
       </div>
     </div>
   );
 };
+
 
 export default Row;

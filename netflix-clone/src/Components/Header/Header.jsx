@@ -50,19 +50,4 @@ function Header() {
 export default Header
 
 
-// // function Header() {
-// //   return (
-// //     <div className="header">
-// //       <ul>
-// //         <li>yo</li>
-// //         <li>yo</li>
-// //         <li>yo</li>
-// //         <li>yo</li>
-// //       </ul>
-// //     </div>
-// //   );
-// // }
-
-// // export default Header
-
 
