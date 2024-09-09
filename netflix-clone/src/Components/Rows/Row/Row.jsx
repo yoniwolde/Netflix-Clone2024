@@ -4,6 +4,7 @@ import axios from "../../Utils/axios";
 import movieTrailer from "movie-trailer";
 import YouTube from "react-youtube";
 
+
 const Row = ({ title, fetchUrl, isLargeRow }) => {
   const [movies, setMovie] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
@@ -27,7 +28,8 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
     if (trailerUrl) {
       setTrailerUrl("");
     } else {
-      movieTrailer(movie?.title || movie?.name || movie?.original_name).then(
+      movieTrailer(movie?.title || movie?.name || movie?.original_name)
+        .then(
         (url) => {
           console.log(url);
           const urlParams = new URLSearchParams(new URL(url).search);
@@ -35,7 +37,8 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
           console.log(urlParams.get("v"));
           setTrailerUrl(urlParams.get("v"));
         }
-      );
+      )
+      .catch ((error) => console.log(error));
     }
   };
 

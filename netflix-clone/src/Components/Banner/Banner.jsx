@@ -1,29 +1,28 @@
-import React, { useState, useEffect } from 'react'
-import axios from "../Utils/axios"
-import requests from "../Utils/requests"
-import "./banner.css"
+import React, { useState, useEffect } from 'react';
+import axios from "../Utils/axios";
+import requests from "../Utils/requests";
+import "./banner.css";
 
 const Banner = () => {
     const [movie, setMovie] = useState({});
-    useEffect(() => {
-        (async () => {
-            try {
-              let request = await axios.get(requests.fetchNetflixOriginals);
-              // console.log(request);
-                setMovie(request.data.results[
-                    Math.floor(Math.random() * request.data.results.length)
-                ]);
-            } catch (error) {
-                console.log("error", error)
-                }
-            })
-        })
-
+  useEffect(() => {
+    (async () => {
+      try {
+        const request = await axios.get(requests.fetchNetflixOriginals)
+        console.log(request);
+        setMovie(request.data.results[
+          Math.floor(Math.random() * request.data.results.length)
+        ]);
+      } catch (error) {
+        console.log("error", error.message)
+      }
+    })()
+  }, []);
+  
     function truncate(str, n) {
         return str?.length > n ? str.substr(0, n - 1) + '...' : str;
   }
   
-
   return (
     <div
       className="banner"
@@ -31,7 +30,7 @@ const Banner = () => {
         backgroundSize: "cover",
         backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
         backgroundPosition: "center",
-        backgroundREpeat: "no-repeat",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="banner_contents">

@@ -7,12 +7,12 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="footer_outer_container">
+      <div className="footer_icons">
+        <FacebookOutlinedIcon />
+        <InstagramIcon />
+        <YouTube />
+      </div>
       <div className="footer_inner_container">
-        <div className="footer_icons">
-          <FacebookOutlinedIcon />
-          <InstagramIcon />
-          <YouTube />
-        </div>
         <div className="footer_data">
           <div>
             <ul>
@@ -44,12 +44,10 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div>
-        <div className="service_code">
-          <p>Service Code</p>
-        </div>
-        <div className="copy-write">&copy; 1997-2024 Netflix, Inc.</div>
+      <div className="service_code">
+        <p>Service Code</p>
       </div>
+      <div className="copy-write">&copy; 1997-2024 Netflix, Inc.</div>
     </div>
   );
 }

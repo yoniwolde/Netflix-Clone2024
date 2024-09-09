@@ -3,19 +3,17 @@
   top: 0;
   display: flex;
   align-items: center;
-  /* background-color: rgb(148, 132, 132); */
-  /* background-color: rgb(20, 20, 20); */
   background-color: transparent;
   width: 100%;
   /* height: 10vh; */
-  color: white;
   z-index: 1;
   transition: all 0.5s;
   transition-timing-function: ease-in;
-  background-color: #0a0a0ab2;
+  background-color: #111111fd;
   color: white;
   font-weight: 100;
-  width: 980px;
+  width: 100%;
+  justify-content: center;
 }
 
 .header_container {
@@ -41,10 +39,12 @@
 .header-right ul {
   width: 140%;
   display: flex;
-  /* justify-content:flex-end; */
   align-items: center;
   list-style: none;
   cursor: pointer;
+  justify-content: space-between;
+  margin-right: 10px;
+  
 
 }
 
