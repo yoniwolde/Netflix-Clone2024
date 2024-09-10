@@ -33,7 +33,8 @@
 .row {
   margin-left: 20px;
   color: white;
-  /* background-color: black; */
+  cursor: pointer;
+
 }
 
 /* 

@@ -7,12 +7,12 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="footer_outer_container">
-      <div className="footer_icons">
-        <FacebookOutlinedIcon />
-        <InstagramIcon />
-        <YouTube />
-      </div>
       <div className="footer_inner_container">
+        <div className="footer_icons">
+          <FacebookOutlinedIcon />
+          <InstagramIcon />
+          <YouTube />
+        </div>
         <div className="footer_data">
           <div>
             <ul>
@@ -21,7 +21,7 @@ function Footer() {
               <li>Legal Notice</li>
             </ul>
           </div>
-        </div>
+        
         <div>
           <ul>
             <li>Help Center</li>
@@ -42,7 +42,8 @@ function Footer() {
             <li>Privacy</li>
             <li>Contact Us</li>
           </ul>
-        </div>
+          </div>
+          </div>
       </div>
       <div className="service_code">
         <p>Service Code</p>

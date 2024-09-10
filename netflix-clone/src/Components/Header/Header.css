@@ -4,26 +4,31 @@
   display: flex;
   align-items: center;
   background-color: transparent;
-  width: 100%;
-  /* height: 10vh; */
   z-index: 1;
   transition: all 0.5s;
   transition-timing-function: ease-in;
   background-color: #111111fd;
-  color: white;
+  color: rgba(255, 255, 255, 0.721);
   font-weight: 100;
-  width: 100%;
   justify-content: center;
 }
 
+.header_left ul li:hover{
+   transform: scale(1.09);
+    color: rgb(255, 255, 255);
+}
+
+.header-right ul li :hover{
+  transform: scale(1.09);
+   color: rgb(254, 251, 246);
+}
+
 .header_container {
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  /* background-color:red; */
-  
 }
 
 .header_left ul {
