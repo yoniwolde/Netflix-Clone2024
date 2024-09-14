@@ -18,10 +18,10 @@ function Header() {
               </li>
               <li>Netflix</li>
               <li>Home</li>
-              <li>TVShows</li>
+              <li>TV Shows</li>
               <li>Movies</li>
               <li>Latest</li>
-              <li>MyList</li>
+              <li>My List</li>
               <li>Browser by Languages</li>
             </ul>
           </div>

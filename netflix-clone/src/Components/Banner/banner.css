@@ -1,5 +1,5 @@
 .banner {
-  margin-top: -10vh;
+  margin-top: -0.6vh;
   height: 80vh;
   margin-bottom: -80px;
   color: rgb(255, 255, 255);
@@ -10,7 +10,7 @@
 .banner_contents {
   margin-left: 30px;
   padding-top: 300px;
-  /* height: 190px; */
+  height: 140px;
 }
 
 .banner_title {
@@ -28,7 +28,7 @@
   height: 80px;
 }
 
-.banner_button {
+/* .banner_buttons {
   cursor: pointer;
   color: #fff;
   outline: none;
@@ -37,17 +37,43 @@
   font-weight: 700;
   border-radius: 10rem;
   margin-right: 2rem;
-  background-color: rgba(138, 136, 136, 0.5);
+  background-color: rgba(235, 235, 235, 0.5);
+} */
+
+.banner_button{
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-right: 2rem;
+  background-color: rgba(17, 17, 17, 0.671);
+  padding: 10px 30px;
 }
+.banner_button_play{
+  cursor: pointer;
+  color: #000000b6;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-right: 2rem;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 30px;
+}
+
+
 
 .Play {
   color: #e3acac;
   background-color: #fff;
 }
 
-.banner_button:hover {
+.banner_buttons :hover {
   color: #ed3434;
-  border-color: #dd1a1a;
   transition: a110.2s;
 }
 
